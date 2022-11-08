@@ -33,3 +33,5 @@ def home(request):
 def about(request):
     return render(request, 'elibrary/about.html')
 
+def welcome(request):
+    return render(request, 'elibrary/welcome.html')

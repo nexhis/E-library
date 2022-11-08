@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="57fa938c-f054-4b1b-9a51-956500c82256" name="Changes" comment="WIN-24 adding docker file in github">
-      <change beforePath="$PROJECT_DIR$/.idea/Online_library.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Online_library.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="57fa938c-f054-4b1b-9a51-956500c82256" name="Changes" comment="WIN-26 creating the custom user profile and adding data in database">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elibrary/templates/elibrary/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/elibrary/templates/elibrary/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elibrary/templates/elibrary/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/elibrary/templates/elibrary/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elibrary/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/elibrary/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elibrary/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/elibrary/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elibrary/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/elibrary/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,14 +28,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/nexhi/Desktop/e-library updated",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/nexhi/Desktop/E-library&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\nexhi\Desktop\Online_library\users\static\users" />
@@ -52,6 +54,14 @@
       <option name="presentableId" value="Default" />
       <updated>1666101650609</updated>
     </task>
+    <task id="LOCAL-00001" summary="WIN-26 creating the custom user profile and adding data in database">
+      <created>1667787753466</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1667787753466</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -64,5 +74,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="WIN-26 creating the custom user profile and adding data in database" />
+    <option name="LAST_COMMIT_MESSAGE" value="WIN-26 creating the custom user profile and adding data in database" />
   </component>
 </project>

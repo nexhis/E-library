@@ -2,79 +2,134 @@
 {% block content %}
 
 <!DOCTYPE html>
-<html lang='en' class=''>
-  <head>
-    <meta charset='UTF-8'>
-    <title>E-Library</title>
-    <h2> About our website E-Library </h2>
-    <style>
-        body {
-        background-color: #e9eaf8;
-        margin: 200px 40%;
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
 
-      }
+html {
+  box-sizing: border-box;
+}
 
-      form {
-        background-color: #111113;
-        width: 500px;
-        height: 44px;
-        border-radius: 50px;
-        display:flex;
-        flex-direction:row;
-        align-items:center;
-      }
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 
-      input {
-        all: unset;
-        font: 16px system-ui;
-        color: #fff;
-        height: 100%;
-        width: 100%;
-        padding: 6px 10px;
-      }
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
 
-      ::placeholder {
-        color: #fff;
-        opacity: 0.7;
-      }
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
 
-      svg {
-        color: #fff;
-        fill: currentColor;
-        width: 24px;
-        height: 24px;
-        padding: 10px;
-      }
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
 
-      button {
-        all: unset;
-        cursor: pointer;
-        width: 44px;
-        height: 44px;
-      }
-    </style>
-  </head>
-  <body>
-    <form role="search" id="form">
-      <input type="search" id="query" name="q" placeholder="Search..." aria-label="Search through site content">
-      <button>
-        <svg viewBox="0 0 1024 1024"><path class="path1" d="M848.471 928l-263.059-263.059c-48.941 36.706-110.118 55.059-177.412 55.059-171.294 0-312-140.706-312-312s140.706-312 312-312c171.294 0 312 140.706 312 312 0 67.294-24.471 128.471-55.059 177.412l263.059 263.059-79.529 79.529zM189.623 408.078c0 121.364 97.091 218.455 218.455 218.455s218.455-97.091 218.455-218.455c0-121.364-103.159-218.455-218.455-218.455-121.364 0-218.455 97.091-218.455 218.455z"></path></svg>
-      </button>
-    </form>
-    <script>
-      const f = document.getElementById('form');
-      const q = document.getElementById('query');
+.container {
+  padding: 0 16px;
+}
 
-      function submitted(event) {
-        event.preventDefault();
-        const url = google + site + '+' + q.value;
-        const win = window.open(url, '_blank');
-        win.focus();
-      }
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 
-      f.addEventListener('submit', submitted);
-    </script>
-  </body>
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="about-section">
+  <h1> Online library  </h1>
+  <p>This is a webpage designed from 5 graduate students about an online library.With the advancement of technology, having a system that can manage the books of the
+library is very beneficial for a lot of reasons. One of them is being more organized and keeping
+track of the books in real time.</p>
+  <p>This webpage which will help librarians to manage their books
+better.</p>
+</div>
+
+<h2 style="text-align:center">Our Team</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="image.jpeg"alt="Nexhi" style="width:100%">
+      <div class="container">
+        <h2>Nexhi Sula</h2>
+        <p class="title">AI graduate student</p>
+        <p></p>
+        <p>nexhi.sula@slu.edu</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="/w3images/team2.jpg" alt="Chintak" style="width:100%">
+      <div class="container">
+        <h2>Chintak Joshi</h2>
+        <p class="title">CS Graduate student</p>
+        <p></p>
+        <p>Chintak.joshi@slu.edu</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="/w3images/team3.jpg" alt="Preethi" style="width:100%">
+      <div class="container">
+        <h2>Preethi </h2>
+        <p class="title">Designer</p>
+        <p></p>
+        <p>preethi@slu.edu</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
 </html>
 
 {% endblock content %}
