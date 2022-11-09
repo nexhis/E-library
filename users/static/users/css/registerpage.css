@@ -1,7 +1,15 @@
 body{
     margin: 0;
     padding: 0;
+    margin-left: 335px;
     font-family: sans-serif;
     background: url(registrationcssimg.jpg);
     background-size: cover;
+}
+.mb-4, .my-4{
+    text-align: center;
+}
+
+.pt-3, .py-3{
+    text-align: center;
 }
