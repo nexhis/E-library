@@ -3,8 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="57fa938c-f054-4b1b-9a51-956500c82256" name="Changes" comment="WIN-26 creating the custom user profile and adding data in database">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elibrary/templates/elibrary/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/elibrary/templates/elibrary/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elibrary/templates/elibrary/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/elibrary/templates/elibrary/base.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
