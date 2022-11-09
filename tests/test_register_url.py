@@ -34,8 +34,16 @@ def test_user_login(client, create_test_user, user_data):
 
 
 @pytest.mark.django_db
+<<<<<<< HEAD
  def test_user_logout(client, authenticated_user):
      logout_url = urls.reverse('logout')
      resp = client.get(logout_url)
      assert resp.status_code == 302
      assert resp.url == urls.reverse('library-homepage')
+=======
+def test_user_logout(client, authenticated_user):
+    logout_url = urls.reverse('logout')
+    resp = client.get(logout_url)
+    assert resp.status_code == 302
+    assert resp.url == urls.reverse('library-homepage')
+>>>>>>> WIN-26-Custom_user_profile

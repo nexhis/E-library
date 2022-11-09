@@ -33,3 +33,8 @@ def home(request):
 def about(request):
     return render(request, 'elibrary/about.html')
 
+<<<<<<< HEAD
+=======
+def welcome(request):
+    return render(request, 'elibrary/welcome.html')
+>>>>>>> WIN-26-Custom_user_profile
