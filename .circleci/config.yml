@@ -28,7 +28,7 @@ jobs:
     # Here we're making sure we use just use the system-wide pip. By default it uses the project root's requirements.txt.
     # Then run your tests!
     # CircleCI will report the results back to your VCS provider.
-=======
+
 version: 2.1
 orbs:
   python: circleci/python@1.5.0
@@ -36,12 +36,10 @@ jobs:
   build-and-test:
     docker:
       - image: cimg/python:3.10.2
->>>>>>> WIN-26-Custom_user_profile
     steps:
       - checkout
       - python/install-packages:
           pkg-manager: pip
-<<<<<<< HEAD
           # app-dir: ~/project/package-directory/  # If you're requirements.txt isn't in the root directory.
           # pip-dependency-file: test-requirements.txt  # if you have a different name for your requirements file, maybe one that combines your runtime and test requirements.
       - run:
@@ -54,21 +52,15 @@ jobs:
 workflows:
   sample: # This is the name of the workflow, feel free to change it to better match your workflow.
     # Inside the workflow, you define the jobs you want to run.
-=======
       - run:
           name: Run tests
           command: pytest
 workflows:
   sample:
->>>>>>> WIN-26-Custom_user_profile
     jobs:
       - build-and-test:
           filters:
             branches:
               only:
                 -master
-<<<<<<< HEAD
       - build-and-test
-=======
-      - build-and-test
->>>>>>> WIN-26-Custom_user_profile
