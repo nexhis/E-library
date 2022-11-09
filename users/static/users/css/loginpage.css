@@ -1,0 +1,20 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: url(loginbackground.jpg);
+    background-size: cover;
+}
+
+.col-md-4 {
+    visibility: hidden;
+}
+
+.fixed-top {
+    background-color: black; 
+  }
+
+.content-section{
+    margin-top: 200px;
+    margin-left: 250px;
+}
