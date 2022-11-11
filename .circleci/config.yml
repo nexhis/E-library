@@ -12,6 +12,7 @@ jobs:
       - run:
           name: install dependencies
           command: pip install pytest
+  
       - run:
           name: Run tests
           command: python -m pytest
@@ -19,9 +20,4 @@ jobs:
 workflows:
   sample:
     jobs:
-      - build-and-test:
-          filters:
-            branches:
-              only:
-                -master
-                -new_branch
+      - build-and-test
