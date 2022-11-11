@@ -25,4 +25,4 @@ workflows:
               only:
                 - Login_Anky
                 - master
-                - loginfeature
+                - new_branch
