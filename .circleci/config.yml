@@ -19,9 +19,4 @@ jobs:
 workflows:
   sample:
     jobs:
-      - build-and-test:
-          filters:
-            branches:
-              only:
-                -master
-                -new_branch
+      - build-and-test
