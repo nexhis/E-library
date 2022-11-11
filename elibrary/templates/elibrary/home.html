@@ -1,83 +1,201 @@
 {% extends "elibrary/base.html" %}
 {% block content %}
+{%load static%}
 <!DOCTYPE html>
 <html lang='en' class=''>
   <head>
-    <meta charset='UTF-8'>
-    <title>E-Library</title>
-    <h2> Welcome to E-Library </h2>
-    <style>
-        body {
-        background-color: #e9eaf8;
-        margin: 200px 40%;
 
-      }
-
-      form {
-        background-color: #111113;
-        width: 500px;
-        height: 44px;
-        border-radius: 50px;
-        display:flex;
-        flex-direction:row;
-        align-items:center;
-      }
-
-      input {
-        all: unset;
-        font: 16px system-ui;
-        color: #fff;
-        height: 100%;
-        width: 100%;
-        padding: 6px 10px;
-      }
-
-      ::placeholder {
-        color: #fff;
-        opacity: 0.7;
-      }
-
-      svg {
-        color: #fff;
-        fill: currentColor;
-        width: 24px;
-        height: 24px;
-        padding: 10px;
-      }
-
-      button {
-        all: unset;
-        cursor: pointer;
-        width: 44px;
-        height: 44px;
-      }
-    </style>
+    <link rel="stylesheet" href="{% static 'elibrary/mainwebpage.css' %}">
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
   </head>
+  
   <body>
-      {% for book in books %}
-          <h1> {{book.title}} </h1>
-          <p> By {{book.author}} on {{book.date_added}}</p>
-      {% endfor %}
-    <form role="search" id="form">
-      <input type="search" id="query" name="q" placeholder="Search..." aria-label="Search through site content">
-      <button>
-        <svg viewBox="0 0 1024 1024"><path class="path1" d="M848.471 928l-263.059-263.059c-48.941 36.706-110.118 55.059-177.412 55.059-171.294 0-312-140.706-312-312s140.706-312 312-312c171.294 0 312 140.706 312 312 0 67.294-24.471 128.471-55.059 177.412l263.059 263.059-79.529 79.529zM189.623 408.078c0 121.364 97.091 218.455 218.455 218.455s218.455-97.091 218.455-218.455c0-121.364-103.159-218.455-218.455-218.455-121.364 0-218.455 97.091-218.455 218.455z"></path></svg>
-      </button>
-    </form>
-    <script>
-      const f = document.getElementById('form');
-      const q = document.getElementById('query');
-
-      function submitted(event) {
-        event.preventDefault();
-        const url = google + site + '+' + q.value;
-        const win = window.open(url, '_blank');
-        win.focus();
-      }
-
-      f.addEventListener('submit', submitted);
-    </script>
+    <section>
+      <div class="section">
+        <div class="section1">
+          <div class="img-slider">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3G9Xuofu0Vy7jZtGB79BLohoLTVMuz40Jkw&usqp=CAU" alt="" class="img">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-mbFrl6IarbiPMeTvixdiZwuvnOb5b_HmiQ&usqp=CAU" alt="" class="img">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVSZOHrSB3Dcktxha1XwS0FgnnYGCFqrsvgQ&usqp=CAU" alt="" class="img">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeJaMMHobwAs0NwdGEaIvkS_nB8fNrdZlpQQ&usqp=CAU" alt="" class="img">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfGt6oyjZ4Dk4X8_1FGXPRX642PRmLhIBcMw&usqp=CAU" alt="" class="img">
+          </div>
+  
+        </div>
+        <div id="section2" class="section2">
+          <div class="container">
+            <div class="items">
+              <div class="img img1"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPBpkRyZ2YtlHup_OGcTittBvTkn8LG4iBEHK8LTO2SmSIwnXAXrsFgkHei-XRVG-YsVI&usqp=CAU" alt=""></div>
+              <div class="name">SHOES</div>
+              <div class="price">$5</div>
+              <div class="info">Lorem ipsum dolor sit amet consectetur.</div>
+            </div>
+            <div class="items">
+              <div class="img img2"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkwO23Z7yfJZMbPbafK0rXkcNsyCnFfDJTpA&usqp=CAU" alt=""></div>
+              <div class="name">MEN's T-SHIRT</div>
+              <div class="price">$6.34</div>
+              <div class="info">Lorem ipsum dolor sit.</div>
+            </div>
+            <div class="items">
+              <div class="img img3"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSD9tQUk-D71awFlaNA60kGZaJZCMrxRgmUDA&usqp=CAU" alt=""></div>
+              <div class="name">JEANS</div>
+              <div class="price">$9</div>
+              <div class="info">Lorem ipsum dolor sit amet.</div>
+            </div>
+            <div class="items">
+              <div class="img img1"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMth1EUILFA16UgFFioPMBq42CheUiWcZjMw&usqp=CAU" alt=""></div>
+              <div class="name">WATCH</div>
+              <div class="price">$9.1</div>
+              <div class="info">Lorem ipsum dolor sit.</div>
+            </div>
+            <div class="items">
+              <div class="img img1"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMzwp1U-aOTHvotIVPU47WYIqXnBubT4EwYA&usqp=CAU" alt=""></div>
+              <div class="name">SMART PHONE</div>
+              <div class="price">$20</div>
+              <div class="info">Lorem ipsum dolor sit.</div>
+            </div>
+            <div class="items">
+              <div class="img img1"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9zX1K6eW63ARyxyiWTqpnsl1nbsrdj9Ok9Q&usqp=CAU" alt=""></div>
+              <div class="name">TELEVISION</div>
+              <div class="price">$18</div>
+              <div class="info">Lorem ipsum dolor sit amet consectetur.</div>
+            </div>
+            <div class="items">
+              <div class="img img1"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXcz9TaabErH6Qzokc_Ect6GhVdgOU6-BuTA&usqp=CAU" alt=""></div>
+              <div class="name">HOODIES</div>
+              <div class="price">$6.7</div>
+              <div class="info">Lorem ipsum dolor sit.</div>
+            </div>
+            <div class="items">
+              <div class="img img1"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSao6X8XoCdiCZj6IYdx0q1ck6Qw-SKrl_YlQ&usqp=CAU" alt=""></div>
+              <div class="name">DINNER SET</div>
+              <div class="price">$10</div>
+              <div class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+            </div>
+            <div class="items">
+              <div class="img img1"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrxcdDQFt4iMxMEeXprucmgVnLHnXLkT3FRg&usqp=CAU" alt=""></div>
+              <div class="name">BLANKETS</div>
+              <div class="price">$9.9</div>
+              <div class="info">Lorem ipsum dolor sit amet consectetur adipisicing.</div>
+            </div>
+            <div class="items">
+              <div class="img img1"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEhcmQoMzS7nQVFZgi9IrSe0G2Kx9oV6vtxw&usqp=CAU" alt=""></div>
+              <div class="name">LAPTOP</div>
+              <div class="price">$99</div>
+              <div class="info">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
+            </div>
+            <div class="items">
+              <div class="img img1"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTy3_vOEZFrJRce7QYPJDfxjXtXNFOglfx1NA&usqp=CAU" alt=""></div>
+              <div class="name">MICROWAVE</div>
+              <div class="price">$30</div>
+              <div class="info">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
+            </div>
+            <div class="items">
+              <div class="img img1"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUlZMnZZd9GhvGwkqJ8LKKeuAFIcRszJTpBBRzDXDfNafRonjy2gZWI3_j7nYiJR9grkw&usqp=CAU" alt=""></div>
+              <div class="name">COFFEE MAKER</div>
+              <div class="price">$29.7</div>
+              <div class="info">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
+            </div>
+            <div class="items">
+              <div class="img img1"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQppwAtM4Mp1JBo0UyFN-ByXD3_FpGWfteKZA&usqp=CAU" alt=""></div>
+              <div class="name">BED</div>
+              <div class="price">$100</div>
+              <div class="info">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
+            </div>
+            <div class="items">
+              <div class="img img1"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTybNauPjivWkhuzIcjJP3_RfKvWbLudRAzbA&usqp=CAU" alt=""></div>
+              <div class="name">AIR CONDITIONER</div>
+              <div class="price">$78</div>
+              <div class="info">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
+            </div>
+            <div class="items">
+              <div class="img img1"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIygUFEmLUoLNjBwJRXNXJGshGJBUmwVacwrmBT1Ym3Dd3aXkPg5DNgfGQpfkzp5qpt4E&usqp=CAU" alt=""></div>
+              <div class="name">BOOK</div>
+              <div class="price">$9</div>
+              <div class="info">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
+            </div>
+            <div class="items">
+              <div class="img img1"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwR8IUb1KSAQ4u1ccZBNBp4Wzd89bp1MMYnw&usqp=CAU" alt=""></div>
+              <div class="name">BAG</div>
+              <div class="price">$36.5</div>
+              <div class="info">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
+            </div>
+            <div class="items">
+              <div class="img img1"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfh_9gMjrGle0yrmSZL2LDdV5Uv-fZyvuFPQ&usqp=CAU" alt=""></div>
+              <div class="name">SAREES</div>
+              <div class="price">$25.6</div>
+              <div class="info">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
+            </div>
+            <div class="items">
+              <div class="img img1"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-Xa0IX4CXEmtYSrl4pWe8aME4LwO4vYBpZg&usqp=CAU" alt=""></div>
+              <div class="name">WASHING MACHINE</div>
+              <div class="price">$56</div>
+              <div class="info">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
+            </div>
+          </div>
+  
+        </div>
+      </div>
+  
+    </section>
+    <footer>
+      <div id="footer" class="footer0">
+        <h1>Connect with us at</h1>
+      </div>
+      <div class="footer">
+      <div class="social-media">
+          <a href="#">
+            <ion-icon name="logo-facebook"></ion-icon>
+          </a>
+          <a href="#">
+            <ion-icon name="logo-linkedin"></ion-icon>
+          </a>
+          <a href="#">
+            <ion-icon name="logo-youtube"></ion-icon>
+          </a>
+          <a href="#">
+            <ion-icon name="logo-instagram"></ion-icon>
+          </a>
+          <a href="#">
+            <ion-icon name="logo-twitter"></ion-icon>
+          </a>
+        </div>
+      </div>
+      <div class="footer2">
+        <div class="product">
+          <div class="heading">Products</div>
+          <div class="div">Advertise</div>
+          <div class="div">Pricing</div>
+          <div class="div">Product Buisness</div>
+  
+        </div>
+        <div class="services">
+          <div class="heading">Services</div>
+          <div class="div">Return</div>
+          <div class="div">Cash Back</div>
+          <div class="div">Subscriptions</div>
+          <div class="div">Others</div>
+        </div>
+        <div class="Company">
+          <div class="heading">Company</div>
+          <div class="div">Complaint</div>
+          <div class="div">Careers</div>
+          <div class="div">Report Lost</div>
+          <div class="div">Support</div>
+        </div>
+        <div class="Get Help">
+          <div class="heading">Get Help</div>
+          <div class="div">Help Center</div>
+          <div class="div">Privacy Policy</div>
+          <div class="div">Terms</div>
+          <div class="div">Login</div>
+        </div>
+      </div>
+      <div class="footer3">Copyright © <h4>E-library</h4> 2022-2023</div>
+    </footer>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script src="{% static 'elibrary/home.js' %}"></script>
+  
   </body>
-</html>
-
-{% endblock content %}
+  </html>
+  {% endblock content %}
