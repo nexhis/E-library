@@ -33,6 +33,7 @@ def test_user_login(client, create_test_user, user_data):
     assert resp.url == urls.reverse('library-homepage')
 
 
+# @pytest.mark.django_db
 # def test_user_logout(client, authenticated_user):
 #     logout_url = urls.reverse('logout')
 #     resp = client.get(logout_url)

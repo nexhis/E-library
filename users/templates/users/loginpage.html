@@ -1,7 +1,8 @@
 {% extends "elibrary/base.html" %}
 {% load crispy_forms_tags %}
 {% block content %}
-
+{%load static%}
+<link rel="stylesheet" type="text/css" href="{% static 'users/css/loginpage.css' %}">
     <div class="content-section">
         <form method="POST">
             {% csrf_token %}
