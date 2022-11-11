@@ -11,7 +11,7 @@ jobs:
           pkg-manager: pip
       - run:
           name: install dependencies
-          command: pip install pytest && settings.configure()
+          command: pip install pytest
   
       - run:
           name: Run tests
