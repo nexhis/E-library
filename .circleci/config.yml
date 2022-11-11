@@ -23,4 +23,6 @@ workflows:
           filters:
             branches:
               only:
-                -Login_Anky
+                - Login_Anky
+                - master
+                - loginfeature
