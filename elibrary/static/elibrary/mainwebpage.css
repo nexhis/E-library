@@ -6,6 +6,9 @@
   html {
     scroll-behavior:smooth;
   }
+<<<<<<< HEAD
+
+=======
   
   .img-slider img {
     height: 720px;
@@ -60,7 +63,11 @@
     animation-iteration-count: infinite;
     transition-duration: 2s;
   }
+<<<<<<< HEAD
+
+=======
   
+>>>>>>> origin/loginFeature
   .heading1 {
     opacity: 0;
   }
@@ -71,12 +78,20 @@
   .section1 {
     width: 1080px;
     overflow: hidden;
+<<<<<<< HEAD
+
+=======
   
+>>>>>>> origin/loginFeature
     justify-content: center;
     align-items: center;
     margin: 0px auto;
   }
+<<<<<<< HEAD
+
+=======
   
+>>>>>>> origin/loginFeature
   .section2 .container {
     display: flex;
     width: 100%;
@@ -138,7 +153,11 @@
     align-items: center;
     color: white;
   }
+<<<<<<< HEAD
+
+=======
   
+>>>>>>> origin/loginFeature
   .footer1 {
     display: flex;
     flex-direction: column;
@@ -218,12 +237,20 @@
   .close {
     cursor: pointer;
   }
+<<<<<<< HEAD
+
+=======
   
+>>>>>>> origin/loginFeature
   @media screen and (max-width: 1250px) {
     .heading ul li {
       display: none;
     }
+<<<<<<< HEAD
+
+=======
   
+>>>>>>> origin/loginFeature
     .items {
       transform: scale(0.9);
     }
@@ -242,7 +269,11 @@
     .menu a ion-icon {
       position: absolute;
     }
+<<<<<<< HEAD
+
+=======
   
+>>>>>>> origin/loginFeature
     @keyframes slide1 {
       0% {
         left: 0vw;
@@ -297,7 +328,11 @@
     }
     .close {
       z-index: 34;
+<<<<<<< HEAD
+
+=======
   
+>>>>>>> origin/loginFeature
       color: white;
       background-color: black;
     }
@@ -310,7 +345,11 @@
       border-top: 3px solid white;
       width: 80%;
       text-align: center;
+<<<<<<< HEAD
+
+=======
   
+>>>>>>> origin/loginFeature
       padding-top: 10px;
     }
     .menu ul li a {
@@ -336,12 +375,20 @@
     .section1 {
       width: 80%;
       overflow: hidden;
+<<<<<<< HEAD
+
+=======
   
+>>>>>>> origin/loginFeature
       justify-content: center;
       align-items: center;
       margin: 0px auto;
     }
+<<<<<<< HEAD
+
+=======
   
+>>>>>>> origin/loginFeature
     .heading1 {
       opacity: 1;
       position: relative;
@@ -351,7 +398,11 @@
       display: flex;
       flex-wrap: nowrap;
     }
+<<<<<<< HEAD
+
+=======
   
+>>>>>>> origin/loginFeature
     .heading1 .ham {
       background-color: black;
       color: white;
@@ -370,6 +421,12 @@
     }
     .heading1 {
       opacity: 1;
+<<<<<<< HEAD
+
+      bottom: 8px;
+    }
+
+=======
   
       bottom: 8px;
     }
@@ -380,7 +437,11 @@
     .close {
       z-index: 34;
     }
+<<<<<<< HEAD
+
+=======
   
+>>>>>>> origin/loginFeature
     .search a {
       display: flex;
       flex-wrap: nowrap;
