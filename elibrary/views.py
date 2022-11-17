@@ -34,5 +34,4 @@ def about(request):
     return render(request, 'elibrary/about.html')
 
 def welcome(request):
-    return render (request, 'elibrary/welcomepage.html')
-
+    return render (request, 'elibrary/welcome.html')

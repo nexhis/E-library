@@ -29,10 +29,7 @@ ul {
 }
 
 .content-section {
-<<<<<<< HEAD
-=======
   margin-top: 150px;
->>>>>>> origin/loginFeature
   background: #ffffff;
   padding: 10px 20px;
   border: 1px solid #dddddd;
@@ -85,8 +82,8 @@ a.article-title:hover {
 
 .account-heading {
   font-size: 2.5rem;
-<<<<<<< HEAD
 }
-=======
+
+.col-md-8{
+  max-width: fit-content;
 }
->>>>>>> origin/loginFeature
