@@ -15,6 +15,8 @@ class Books(models.Model):
     content = models.TextField()
     date_posted = models.DateTimeField(default=timezone.now)
     author = models.CharField(max_length=100)
+    link = models.TextField()
+    
 
 
 from django.contrib.auth.models import User
