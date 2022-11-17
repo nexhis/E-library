@@ -199,7 +199,8 @@
   }
   .section2 .container .items .info {
     padding-left: 10px;
-    color: burlywood;
+    color: black;
+    font-family: 'helvetica';
   }
   .section2 .container .items .img img {
     width: 200px;
