@@ -87,3 +87,8 @@ a.article-title:hover {
 .col-md-8{
   max-width: fit-content;
 }
+
+.text-secondary {
+  font-size: small;
+  display: contents;
+}
