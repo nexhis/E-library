@@ -220,68 +220,6 @@
     cursor: pointer;
   }
   
-  @media screen and (max-width: 1250px) {
-    .heading ul li {
-      display: none;
-    }
-  
-    .items {
-      transform: scale(0.9);
-    }
-    .img-slider img {
-      height: 60vw;
-      width: 80vw;
-    }
-    .ham:active {
-      color: red;
-    }
-    .menu {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    .menu a ion-icon {
-      position: absolute;
-    }
-  
-    @keyframes slide1 {
-      0% {
-        left: 0vw;
-      }
-      15% {
-        left: 0vw;
-      }
-      20% {
-        left: -80vw;
-      }
-      32% {
-        left: -80vw;
-      }
-      35% {
-        left: -160vw;
-      }
-      47% {
-        left: -160vw;
-      }
-      50% {
-        left: -240vw;
-      }
-      63% {
-        left: -240vw;
-      }
-      66% {
-        left: -320vw;
-      }
-      79% {
-        left: -320vw;
-      }
-      82% {
-        left: -400vw;
-      }
-      100% {
-        left: 0vw;
-      }
-    }
     .menu ul {
       display: flex;
       flex-direction: column;
@@ -364,26 +302,4 @@
     header {
       height: 150px;
     }
-  }
-  @media screen and (max-width: 550px) {
-    .heading ul li {
-      display: none;
-    }
-    .heading1 {
-      opacity: 1;
-      
-      bottom: 8px;
-    }
-
-    #input {
-      width: 150px;
-    }
-    .close {
-      z-index: 34;
-    }
   
-    .search a {
-      display: flex;
-      flex-wrap: nowrap;
-    }
-  }
