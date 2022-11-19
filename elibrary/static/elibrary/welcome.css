@@ -1,4 +1,3 @@
-/* Set height to 100% for body and html to enable the background image to cover the whole page: */
 html {
   height: 100%;
 }
@@ -7,19 +6,12 @@ body{
   }
   
   .bgimg {
-    /* Background image */
-    /* Full-screen */
     height: 100%;
-    /* Center the background image */
     background-position: center;
-    /* Scale and zoom in the image */
     background-size: cover;
     position: relative;
-    /* Add a white text color to all elements inside the .bgimg container */
     color: white;
-    /* Add a font */
     font-family: "Courier New", Courier, monospace;
-    /* Set the font-size to 25 pixels */
     font-size: 25px;
   }
   
@@ -50,4 +42,8 @@ body{
   hr {
     margin: auto;
     width: 40%;
+  }
+.button {
+    color: white;
+    background-color: red;
   }
