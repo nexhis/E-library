@@ -14,16 +14,16 @@
     <link rel="stylesheet" type="text/css" href="{% static 'elibrary/maincss.css' %}">
 
     {% if title %}
-        <title>Online Library - {{ title }}</title>
+        <title>E-Library - {{ title }}</title>
     {% else %}
-        <title>Online Library</title>
+        <title>E-Library</title>
     {% endif %}
 </head>
 <body>
     <header class="site-header">
       <nav class="navbar navbar-expand-md navbar-dark bg-steel fixed-top">
         <div class="container">
-          <a class="navbar-brand mr-4" href="{% url 'library' %}">Online Library</a>
+          <a class="navbar-brand mr-4" href="{% url 'library' %}">E-Library</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
           </button>

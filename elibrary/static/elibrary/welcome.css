@@ -1,19 +1,66 @@
-html {
-  height: 100%;
-}
 body{
     background: url(welcome.jpg);
   }
-  
-  .bgimg {
-    height: 100%;
-    background-position: center;
-    background-size: cover;
-    position: relative;
-    color: white;
-    font-family: "Courier New", Courier, monospace;
-    font-size: 25px;
-  }
+
+.sub-box-0 {
+  background-color: solid black;
+  float: left;
+  position: relative;
+  border: 5px solid burlywood;
+  padding: 40px;
+  font-style: italic;
+  width: 1170px;
+  height: 500px;
+}
+.image-slide {
+  position: fixed;
+  top:87px;
+  left:218px;
+}
+.sub-box-1 {
+  display: flex;
+  background-color: black;
+  color:red;
+  width: 640px;
+  height: 150px;
+  text-align: center;
+  border: 5px solid burlywood;
+  position: absolute;
+  top: 510px;
+  padding: 40px;
+  font-weight: 500;
+  font-style: italic;
+}
+.teext {
+  margin-left:60px;
+  font-size: x-large;
+}
+.timer {
+  color: yellow;
+  margin-top: 17px;
+  font-size: small;
+}
+.sub-box-2 {
+  background-color: black;
+  color: greenyellow;
+  width: 515px;
+  height: 150px;
+  text-align: center;
+  border: 5px solid burlywood;
+  position: absolute;
+  top: 510px;
+  left: 670px;
+  padding: 40px;
+  font-weight: 500;
+  font-style: italic;
+}
+
+button {
+  color: white;
+  background-color: red;
+  font-weight: 500;
+}
+
   
   /* Position text in the top-left corner */
   .topleft {
