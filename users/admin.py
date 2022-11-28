@@ -1,13 +1,13 @@
 from django.contrib import admin
-
-
-# Register your models here.
-
 from .models import Profile
+from elibrary.models import Books
 
-
+#register our models so the admin can see them in his admin page
 admin.site.register(Profile)
 
-from django.contrib import admin
+class BooksAdmin(admin.ModelAdmin):
+    list_display = ('title', 'price', 'stock')  #these are the fields of the books we want to show to the admin page
 
-# Register your models here.
+admin.site.register(Books, BooksAdmin)
+
+

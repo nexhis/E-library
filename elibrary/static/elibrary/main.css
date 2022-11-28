@@ -83,6 +83,12 @@ a.article-title:hover {
 .account-heading {
   font-size: 2.5rem;
 }
+
 .col-md-8{
   max-width: fit-content;
+}
+
+.text-secondary {
+  font-size: small;
+  display: contents;
 }
