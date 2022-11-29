@@ -20,7 +20,3 @@ workflows:
   sample:
     jobs:
       - build-and-test
-      filters:
-        branches:
-          only:
-            -master
