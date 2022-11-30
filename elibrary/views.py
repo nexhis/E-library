@@ -15,4 +15,3 @@ def about(request):
 def welcome(request):
     books = Books.objects.all() 
     return render (request, 'elibrary/welcome.html', {'books': books})
-
