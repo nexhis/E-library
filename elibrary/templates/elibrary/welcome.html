@@ -23,7 +23,7 @@
       <div class="timer" id="demo"></div>
       <script>
         // Set the date we're counting down to
-        var countDownDate = new Date("Nov 22, 2022 07:47:00").getTime();
+        var countDownDate = new Date("Dec 7, 2022 00:00:00").getTime();
         // Update the count down every 1 second
         var x = setInterval(function() {
         // Get today's date and time
@@ -43,12 +43,17 @@
         document.getElementById("demo").innerHTML = "SALE IS LIVE!!!";
         }
         }, 1000);
+
+        function fun() {
+          alert("YOU HAVE SUBSCRIBED SUCCESSFULLY");
+        }
+
       </script>
     </div>
 
     <div class="sub-box-2" id="sub-box-2">
       <p> SUBSCRIBE AND GET EXCLUSIVE DISCOUNTS!!! </p>
-      <button> subscribe </button>
+      <button onclick="fun()"> subscribe </button>
     </div>
 
   </footer>

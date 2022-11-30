@@ -16,3 +16,6 @@ def welcome(request):
     books = Books.objects.all() 
     return render (request, 'elibrary/welcome.html', {'books': books})
 
+def cart(request):
+    
+    return render(request, 'elibrary/cart.html')
