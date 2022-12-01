@@ -11,8 +11,8 @@
       <br>
       <table class="table">
         <tr>
-          <th><h5>Items: <strong>{{order.get_cart_items}}</strong></h5></th>
-          <th><h5>Total:<strong> ${{order.get_cart_total|floatformat:2}}</strong></h5></th>
+          <th><h5>Items: <strong>2</strong></h5></th>
+          <th><h5>Total:<strong> $66</strong></h5></th>
           <th>
             <a  style="float:right; margin:5px;" class="btn btn-success" href="{% url 'checkout' %}">Checkout</a>
           </th>
@@ -22,30 +22,14 @@
     </div>
 
     <br>
-    <div class="box-element">
       <div class="cart-row">
-        <div style="flex:2"></div>
-        <div style="flex:2"><strong>Item</strong></div>
-        <div style="flex:1"><strong>Price</strong></div>
-        <div style="flex:1"><strong>Quantity</strong></div>
-        <div style="flex:1"><strong>Total</strong></div>
-      </div>
-      {% for item in items %}
-      <div class="cart-row">
-        <div style="flex:2"><img class="row-image" src="{{item.product.image}}"></div>
-        <div style="flex:2"><p>{{item.books.name}}</p></div>
-        <div style="flex:1"><p>${{item.books.price|floatformat:2}}</p></div>
-        <div style="flex:1">
-          <p class="quantity">{{item.quantity}}</p>
-          <div class="quantity">
-            <img data-product="{{item.product.id}}" data-action="add" class="chg-quantity update-cart" src="{% static  'elibrary/arrow-up.png' %}">
-        
-            <img data-product="{{item.product.id}}" data-action="remove" class="chg-quantity update-cart" src="{% static  'elibrary/arrow-down.png' %}">
-          </div>
+        <div style="flex:2"><img class="row-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMth1EUILFA16UgFFioPMBq42CheUiWcZjMw&usqp=CAU"></div>
+        <div style="flex:2"><p>CYBER SECURITY ENGINEERING</p></div>
+        <div style="flex:1"><p>$23.00</p></div>
+        <div style="flex:2"><img class="row-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkwO23Z7yfJZMbPbafK0rXkcNsyCnFfDJTpA&usqp=CAU"></div>
+        <div style="flex:2"><p>Software Engineering</p></div>
+        <div style="flex:1"><p>$43.00</p></div>
         </div>
-        <div style="flex:1"><p>${{item.get_total|floatformat:2}}</p></div>
-      </div>
-      {% endfor %}
     </div>
   </div>
 </div>
