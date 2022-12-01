@@ -24,12 +24,18 @@ body {
   }
   
   .about-section {
+    margin-top: 100px;
+    margin-left: 80px;
     padding: 50px;
+    width: 1000px;
     text-align: center;
-    background-color: #474e5d;
+    background-color: #96a1ba;
     color: white;
   }
-  
+  .about-section-2 {
+    margin-left: 80px;
+    margin-top: 50px;
+  }
   .container {
     padding: 0 16px;
   }
@@ -38,4 +44,9 @@ body {
     content: "";
     clear: both;
     display: table;
+  }
+  .ourteam {
+    margin-top: 50px;
+    text-align: center;
+    text-decoration: underline;
   }
