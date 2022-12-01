@@ -10,4 +10,6 @@ urlpatterns = [
     path('home/', views.home, name='library-homepage'),
     path('about/', views.about, name='library-about'),
     path('cart/', views.cart, name='cart'),
+    path('checkout/', views.checkout, name='checkout'),
+    path('back-to-home/', views.backtohome, name='back-to-home'),
 ]

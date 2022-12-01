@@ -1,10 +1,21 @@
 from django.db import models
+from django.contrib.auth.models import User
+
 
 # Create your models here.
 from django.db import models
 from django.utils import timezone
 from users.models import Profile 
 import datetime
+
+
+class Customer(models.Model):
+	user = models.OneToOneField(User, null=True, blank=True, on_delete=models.CASCADE)
+	name = models.CharField(max_length=200, null=True)
+	email = models.CharField(max_length=200)
+
+	def __str__(self):
+		return self.name
 
 #creating the book model for storing books in database
 class Books(models.Model):
@@ -18,31 +29,48 @@ class Books(models.Model):
         return self.title
 
 
-    @staticmethod
-    def get_books_by_id(ids):
-        return Books.objects.filter(id__in=ids)
-  
-    @staticmethod
-    def get_all_books():
-        return Books.objects.all()
-
-
-
 class Order(models.Model):
-    product = models.ForeignKey(Books,
-                                on_delete=models.CASCADE)
-    customer = models.ForeignKey(Profile,
-                                 on_delete=models.CASCADE)
-    quantity = models.IntegerField(default=1)
-    price = models.IntegerField()
-    address = models.CharField(max_length=50, default='', blank=True)
-    phone = models.CharField(max_length=50, default='', blank=True)
-    date = models.DateField(default=datetime.datetime.today)
-    status = models.BooleanField(default=False)
-  
-    def placeOrder(self):
-        self.save()
-  
-    @staticmethod
-    def get_orders_by_customer(customer_id):
-        return Order.objects.filter(customer=customer_id).order_by('-date')
+	customer = models.ForeignKey(Customer, on_delete=models.SET_NULL, null=True, blank=True)
+	# date_ordered = models.DateTimeField(auto_now_add=True)
+	complete = models.BooleanField(default=False)
+	transaction_id = models.CharField(max_length=100, null=True)
+
+	def __str__(self):
+		return str(self.id)  #our id is an integer 
+
+	@property
+	def get_cart_total(self):
+		orderitems = self.orderitem_set.all()
+		total = sum([item.get_total for item in orderitems])
+		return total 
+		
+	@property
+	def get_cart_items(self):
+		orderitems = self.orderitem_set.all()
+		total = sum([item.quantity for item in orderitems])
+		return total 
+
+#items that will be added to the order 
+class OrderItem(models.Model):
+	product = models.ForeignKey(Books, on_delete=models.SET_NULL, null=True)
+	order = models.ForeignKey(Order, on_delete=models.SET_NULL, null=True)
+	quantity = models.IntegerField(default=0, null=True, blank=True)
+	date_added = models.DateTimeField(auto_now_add=True)
+
+	@property
+	def get_total(self):
+		total = self.product.price * self.quantity
+		return total
+
+
+class ShippingAddress(models.Model):
+	customer = models.ForeignKey(Customer, on_delete=models.SET_NULL, null=True)
+	order = models.ForeignKey(Order, on_delete=models.SET_NULL, null=True)
+	address = models.CharField(max_length=200, null=False)
+	city = models.CharField(max_length=200, null=False)
+	state = models.CharField(max_length=200, null=False)
+	zipcode = models.CharField(max_length=200, null=False)
+	date_added = models.DateTimeField(auto_now_add=True)
+
+	def __str__(self):
+		return self.address

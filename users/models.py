@@ -16,9 +16,10 @@ class Profile(models.Model):
 
     def __str__(self):
         return f' {self.user.username} Profile'
+    
 
 #resize the large uploaded images
-    def save(self):
+    def save(self, **kwargs):
         super().save()  #the method runs of the parent class
 
         img = Image.open(self.image.path) #it will open the image of the current instance
