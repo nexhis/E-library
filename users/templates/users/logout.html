@@ -1,0 +1,12 @@
+{% extends "elibrary/base.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+     
+    <h2>You have successfully logged out of E-library. Come back soon!</h2>
+    <div class="border-top pt-3">
+        <small class="text-muted">
+            {% comment %} by logging out it, you can redirect the link to loginpage {% endcomment %}
+            <a href="{% url 'login' %}">Log In Again</a>
+        </small>
+    </div>
+{% endblock content %}

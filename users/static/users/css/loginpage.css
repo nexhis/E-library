@@ -1,0 +1,36 @@
+body{
+    /* setting the padding and margin of the body and inserting the background image */
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: url(loginbackground.jpg);
+    background-size: cover;
+}
+
+.col-md-4 {
+    /* we are hiding the class and we can call this class when we need it */
+    visibility: hidden;
+}
+
+.fixed-top {
+    background-color: black; 
+  }
+
+.content-section{
+    margin-top: 200px;
+    width: 500px;
+}
+.col-md-8 {
+    max-width: fit-content;
+    align-self: center;
+}
+.mb-4, .my-4{
+    text-align: center;
+}
+.pt-3, .py-3{
+    text-align: center;
+}
+.container{    
+    max-width: max-content;
+
+}

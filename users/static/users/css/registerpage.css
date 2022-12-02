@@ -1,0 +1,18 @@
+body{
+    /* setting border margin, padding and background image to the page */
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: url(registrationcssimg.jpg);
+    background-size: cover;
+}
+
+.mb-4, .my-4{
+    /* to keep the text in center in the class */
+    text-align: center;
+}
+
+.pt-3, .py-3{
+    /* to keep the text in center in the class */
+    text-align: center;
+}
