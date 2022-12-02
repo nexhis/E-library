@@ -39,7 +39,3 @@ def checkout(request):
     context = {'items': items, 'order':order}
     
     return render(request, 'elibrary/checkout.html',context)
-
-def backtohome(request):
-    
-    return render(request, 'elibrary/home.html')
