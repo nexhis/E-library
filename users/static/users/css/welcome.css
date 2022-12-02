@@ -1,0 +1,118 @@
+body{
+    /* applying bg image to the body */
+      background: url(welcome.jpg);
+    }
+  
+  .sub-box-0 {
+    /* making border to the box and styling it */
+    background-color: black;
+    float: left;
+    position: relative;
+    border: 5px solid burlywood;
+    padding: 40px;
+    font-style: italic;
+    width: 1170px;
+    height: 500px;
+  }
+  .image-slide {
+    position: fixed;
+    top:87px;
+    left:218px;
+  }
+  .sub-box-1 {
+    display: flex;
+    background-color: black;
+    color:red;
+    width: 640px;
+    height: 150px;
+    text-align: center;
+    border: 5px solid burlywood;
+    position: absolute;
+    top: 510px;
+    padding: 40px;
+    font-weight: 500;
+    font-style: italic;
+  }
+  .teext {
+    margin-left:60px;
+    font-size: x-large;
+  }
+  .timer {
+    color: yellow;
+    margin-top: 17px;
+    font-size: small;
+  }
+  .sub-box-2 {
+    background-color: black;
+    color: greenyellow;
+    width: 515px;
+    height: 150px;
+    text-align: center;
+    border: 5px solid burlywood;
+    position: absolute;
+    top: 510px;
+    left: 670px;
+    padding: 40px;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  button {
+    color: white;
+    background-color: red;
+    font-weight: 500;
+  }
+  
+    
+    /* Position text in the top-left corner */
+    .topleft {
+      position: absolute;
+      top: 0;
+      left: 16px;
+    }
+    
+    /* Position text in the bottom-left corner */
+    .bottomleft {
+      position: absolute;
+      bottom: 0;
+      left: 16px;
+    }
+    
+    /* Position text in the middle */
+    .middle {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+    
+    /* Style the <hr> element */
+    hr {
+      margin: auto;
+      width: 40%;
+    }
+  .button {
+      color: white;
+      background-color: red;
+    }
+  
+  .boxheading {
+    text-align: center;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: underline;
+  }
+  
+  .boxheading2 {
+    margin-top: 5%;
+    color: white;
+    text-decoration: underline red;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  .boxheading3 {
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: lighter;
+  }
