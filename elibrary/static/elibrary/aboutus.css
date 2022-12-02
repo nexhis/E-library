@@ -10,6 +10,11 @@ body {
   *, *:before, *:after {
     box-sizing: inherit;
   }
+
+.aboutus {
+  color: white;
+  text-decoration: underline;
+}
   
   .column {
     float: left;
@@ -29,7 +34,7 @@ body {
     padding: 50px;
     width: 1000px;
     text-align: center;
-    background-color: #96a1ba;
+    background-color:black;
     color: white;
   }
   .about-section-2 {
