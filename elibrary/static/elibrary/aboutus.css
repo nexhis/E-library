@@ -1,4 +1,5 @@
 body {
+  /* adding font and margin to set the body */
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
   }
@@ -8,6 +9,7 @@ body {
   }
   
   *, *:before, *:after {
+    /* box sizing for before and after the function works */
     box-sizing: inherit;
   }
 

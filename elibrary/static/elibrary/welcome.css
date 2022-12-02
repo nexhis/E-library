@@ -1,8 +1,10 @@
 body{
+  /* applying bg image to the body */
     background: url(welcome.jpg);
   }
 
 .sub-box-0 {
+  /* making border to the box and styling it */
   background-color: solid black;
   float: left;
   position: relative;

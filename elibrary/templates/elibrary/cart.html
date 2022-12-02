@@ -4,7 +4,7 @@
 <div class="row">
   <div class="col-lg-12">
     <div class="box-element">
-
+      {% comment %} adding the homepage url so that user can directly go to main web page {% endcomment %}
       <a  class="btn btn-outline-dark" href="{% url 'library-homepage' %}">&#x2190; Continue Shopping</a>
 
       <br>
@@ -14,6 +14,7 @@
           <th><h5>Items: <strong>2</strong></h5></th>
           <th><h5>Total:<strong> $66</strong></h5></th>
           <th>
+            {% comment %} styling the cart {% endcomment %}
             <a  style="float:right; margin:5px;" class="btn btn-success" href="{% url 'checkout' %}">Checkout</a>
           </th>
         </tr>
