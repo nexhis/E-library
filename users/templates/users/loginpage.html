@@ -3,18 +3,24 @@
 {% block content %}
 {%load static%}
 <link rel="stylesheet" type="text/css" href="{% static 'users/css/loginpage.css' %}">
+
+{% comment %} adding the content section class for the proper classification {% endcomment %}
     <div class="content-section">
         <form method="POST">
             {% csrf_token %}
+
+            {% comment %} setting border for the login button {% endcomment %}
             <fieldset class="form-group">
-                <legend class="border-bottom mb-4">Log In</legend>
+                <legend class="border-bottom mb -4">Log In</legend>
                 {{ form|crispy }}
             </fieldset>
+
             <div class="form-group">
                 <button class="btn btn-outline-info" type="submit">Login</button>
             </div>
         </form>
         <div class="border-top pt-3">
+            {% comment %} If you are a new user, here is the link to the register page {% endcomment %}
             <small class="text-muted">
                 Need An Account? <a class="ml-2" href="{% url 'register' %}">Sign Up Now</a>
             </small>

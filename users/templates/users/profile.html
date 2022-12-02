@@ -2,6 +2,7 @@
 {% load crispy_forms_tags %}
 {% block content %}
 {%load static%}
+{% comment %} here i linked the profile css to the html {% endcomment %}
 <link rel="stylesheet" type="text/css" href="{% static 'users/css/profile.css' %}">
 <div class="content-section">
     {% if messages %}
